@@ -1,0 +1,18 @@
+@model IEnumerable<FlowerShop.Models.Flower>
+
+@{
+    ViewData["Title"] = "See our flowers";
+}
+
+<div class="text-center">
+    <h1 class="display-4">See our flowers</h1>
+</div>
+<ul class="gallery">
+  @foreach(var m in Model)
+  {
+    <li>
+        <a asp-action="Details" asp-route-id="@m.Id"><img src="@m.Url"
+                width="180" height="180"></a>
+    </li>
+    }
+</ul>

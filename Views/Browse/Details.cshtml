@@ -1,0 +1,34 @@
+@model FlowerShop.Models.Flower
+
+@{
+    ViewData["Title"] = "Want to buy?";
+}
+<div class="text-center">
+    <h1 class="display-4">@Html.DisplayFor(model => model.Name)</h1>
+    <br>
+    <h3>@Html.DisplayFor(model => model.Price) лв.</h3>
+    <br>
+    @if (Model.InStock == 0)
+    {
+        <h5>Out of stock :(</h5>
+    }
+    else
+    {
+    <h5>@Html.DisplayFor(model => model.InStock) still left.</h5>
+    }
+    <br>
+    <p>@Html.DisplayFor(model => model.Description)</p>
+        <br>
+        <img src="@Html.DisplayFor(model => model.Url)" width="180" height="180">
+       
+<div>
+        @using(Html.BeginForm("Add","ShoppingCart",FormMethod.Get))
+        {
+            <label>Quantity</label>
+            <input type="number" step="1" min="1" class="quantity" name="amount"/>
+            <input type="hidden" name="id" value="@Html.DisplayFor(model=>model.Id)"/>
+            <button class="details-buttons" type="submit">Add to cart</button>
+        }
+        <a class = "details-buttons" asp-controller="Browse" asp-action="Index"> Back</a>    
+</div>
+</div>

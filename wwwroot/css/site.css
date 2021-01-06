@@ -1,0 +1,144 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/*gallery */
+ul.gallery {
+  display: table;
+  padding: 10px 0 10px 0;
+  list-style: none;
+  width: 600px;
+  height:400px;
+  margin: 0 auto;
+}
+ul.gallery:hover li {
+  opacity: 0.8;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  width: 180px;
+  height: 180px;
+}
+ul.gallery li {
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  float: left;
+  margin: 1px;
+  width: 180px;
+  height: 180px;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+ul.gallery li:hover {
+  box-shadow: 0 5px 15px gba(0, 0, 0, 0.4);
+  opacity: 1;
+  width: 180px;
+  height: 180px;
+  transform: scale(1.08);
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+
+.details-buttons
+{
+  display: inline-block;
+  padding:0.5em 3em;
+  border:0.16em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color:#6b4747;
+  text-align:center;
+  transition: all 0.15s;
+  }
+
+  .details-buttons:hover{
+  color:#DDDDDD;
+  border-color:#DDDDDD;
+  }
+
+  .details-buttons:active{
+  color:#d6d6d6;
+  border-color:#494949;
+  }
+  @media all and (max-width:30em){
+   .details-buttons{
+  display:block;
+  margin:0.4em auto;
+  }
+}
+
+.quantity
+{
+  width:3rem;
+}
